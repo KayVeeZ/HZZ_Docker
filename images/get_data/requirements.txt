@@ -1,0 +1,11 @@
+pika
+uproot
+numpy
+pandas
+msgpack
+awkward
+vector
+numpy
+matplotlib
+requests
+aiohttp
