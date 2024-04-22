@@ -2,8 +2,7 @@
 <div name="description">
 	<h2 style=text-decoration: underline;>Description</h2>
 	<p>
-	In this repository, I play around with the HZZ analysis notebook. I strip the various functions from the notebook as if they were modules <br/>
-	and put them in 2 different containers. <br/>
+	In this repository, I play around with the HZZ analysis notebook. I strip the various functions from the notebook as if they were modules and put them in 2 different containers. <br/>
 		<h3>The containers</h3>
 		<ul>
 			<li>Get_data</li>
