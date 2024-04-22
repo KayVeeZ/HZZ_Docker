@@ -8,9 +8,9 @@
 			<li>Get_data</li>
 			<li>Plot_data</li>
 		</ul>
-	The Get_data container grabs data from the public servers and processes it into a dataframe, a list and an array.<br/>
+	The <u>Get_data</u> container grabs data from the public servers and processes it into a dataframe, a list and an array.<br/>
 	Then sends all of them as pickle dumps to be received by the plot_data container. The information is sent as messages using RabbitMQ. <br/>
-	Plot_data then has code that processes the dataframe, list and array and then plots the received data, then saves the data as a plot named 'plot_dd_mm_yy-HH-MM.png'.<br/>
+	<u>Plot_data</u> then has code that processes the dataframe, list and array and then plots the received data, then saves the data as a plot named 'plot_dd_mm_yy-HH-MM.png'.<br/>
 	This can then be retreived from the plot_data container using the docker cp command.
 	</p>
 </div>
