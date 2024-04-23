@@ -19,4 +19,3 @@
 </div>
 '''bash
 docker image build -t get_data .
-'''
