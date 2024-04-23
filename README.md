@@ -37,7 +37,7 @@ docker run --name get_d1 -it -P get_data
  <kbd>
 	-it: adds interactive shell<br/>
 	-P: maps ports randomly<br/>
-	-d: detaches the container from the CLI (runs it in background) <br/></kbd>
+	-d: detaches the container from the CLI (runs it in background) </kbd><br/>
 	If you happen to detach the container, you can see its logs by using:
  </p>
  
