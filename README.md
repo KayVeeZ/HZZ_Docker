@@ -29,8 +29,8 @@ docker image build -t plot_data .
 
 <h2 style=text-decoration: underline;>Building the containers</h2>
 	<p>Building the containers is a little different than containers, the image is already in the local docker repository. We just need to be careful to add arguments carefully.<br/>
-	-it: adds interactive shell
-	-P: maps ports randomly
+	-it: adds interactive shell<br/>
+	-P: maps ports randomly<br/>
 	-d: detaches the container from the CLI (runs it in background) <br/>
 	In this case you can see the logs by using:</p>
  
