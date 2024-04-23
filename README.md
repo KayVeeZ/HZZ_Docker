@@ -17,6 +17,6 @@
 	<p>Building the images is very easy, the Dockerfile is included in the folders of the respective code scripts to build images. After navigating to the folders where the respective code is,<br/> you have to do the following.</p>
 	<p>For get_data image:</p>
 </div>
-	'''bash
-	docker image build -t get_data .
-	'''
+'''bash
+docker image build -t get_data .
+'''
