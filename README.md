@@ -27,6 +27,16 @@ docker image build -t get_data .
 docker image build -t plot_data .
 ```
 
+<h2 style=text-decoration: underline;>Running RabbitMQ</h2>
+	<p>Before starting the containers, it is very important to start RabbitMQ in an interactive form,detached.<br/></p>
+
+```bash
+docker run --rm -d -p 15672:15672 -p 5672:5672 --name rabbitmq rabbitmq:3-management
+```
+
+<p>Once that is done, you can point a browser to localhost:15672 and use  Username/password = guest:guest.<br/>
+It is very important to do this before running any container or service.
+</p>
 <h2 style=text-decoration: underline;>Building the containers</h2>
 	<p>Building the containers is a little different than containers, the image is already in the local docker repository. We just need to be careful to add arguments carefully.<br/>
 <p>For get_data(named as plot_d1) image:</p>
