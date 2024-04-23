@@ -34,10 +34,10 @@ docker image build -t plot_data .
 ```bash
 docker run --name get_d1 -it -P get_data
 ```
- <p style=border: 2px solid red; border-radius: 5px;>
+ <kbd>
 	-it: adds interactive shell<br/>
 	-P: maps ports randomly<br/>
-	-d: detaches the container from the CLI (runs it in background) </p><br/>
+	-d: detaches the container from the CLI (runs it in background) </kbd><br/>
 	If you happen to detach the container, you can see its logs by using:
  </p>
  
