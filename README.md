@@ -21,4 +21,10 @@
 docker image build -t get_data .
 ```
 
+	<p>For plot_data image:</p>
+
+```
+docker image build -t plot_data .
+```
+
 </div>
