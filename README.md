@@ -64,15 +64,15 @@ docker swarm init --advertise-addr <IP-ADDRESS>
 ```
 
 <kbd>IP-ADDRESS is the ip address of the manager node in the cluster</kbd><br/>
-<li>Once the swarm gets initiated, you'll get two kinds of commands to add with tokens. Depending on your resource availability, requirement and situation you can do one of the following
+<li>Once the swarm gets initiated, you'll get two kinds of commands to add with tokens. Depending on your resource availability, requirement and situation you can do one of the following:
 <ol>
-	<li>You can add manager nodes using the following code on the supposed manager and follow instructions</li>
+	<li>You can add manager nodes using the following code on the supposed manager and follow instructions:</li>
 
  ```bash
 docker swarm join-token manager
 ```
 
-	<li>Or you can add worker nodes using this code:</li>
+<li>Or you can add worker nodes using this code:</li>
 
 ```bash
 docker swarm join --token <TOKEN-NUMBER> <IP-ADDRESS:PORT-EXPOSED>
