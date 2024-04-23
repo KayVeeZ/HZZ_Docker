@@ -34,7 +34,7 @@ docker image build -t plot_data .
 ```bash
 docker run --name get_d1 -it -P get_data
 ```
- <p style=border-style: dashed;>
+ <p style=border: 2px solid red; border-radius: 5px; border-style: dashed;>
 	-it: adds interactive shell<br/>
 	-P: maps ports randomly<br/>
 	-d: detaches the container from the CLI (runs it in background) <br/>
