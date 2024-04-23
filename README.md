@@ -40,6 +40,7 @@ docker run --name get_d1 -it -P get_data
 	-d: detaches the container from the CLI (runs it in background) <br/>
 	In this case you can see the logs by using:</p>
  </p>
+ 
 ```bash
 docker logs get_d1 -f
 ```
