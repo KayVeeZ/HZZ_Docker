@@ -54,5 +54,44 @@ docker run --name plot_d1 -it -P plot_data
 ```
 
 
+<h2 style=text-decoration: underline;>Scaling for load-balancing using docker swarm</h2>
+	<p>You can use scaling in docker swarm for load balancing. Just follow the follwoing steps:</p>
+ <ol>
+<li>1. Initialize docker swarm, by staring a manager node:</li>
 
+```bash
+docker swarm init --advertise-addr <IP-ADDRESS>
+```
+
+<kbd>IP-ADDRESS is the ip address of the manager node in the cluster</kbd><br/>
+<li>Once the swarm gets initiated, you'll get two kinds of commands to add with tokens. Depending on your resource availability, requirement and situation you can do one of the following
+<ol>
+	<li>You can add manager nodes using the following code on the supposed manager and follow instructions</li>
+
+ ```bash
+docker swarm join-token manager
+```
+
+	<li>Or you can add worker nodes using this code:</li>
+
+```bash
+docker swarm join --token <TOKEN-NUMBER> <IP-ADDRESS:PORT-EXPOSED>
+```
+
+ </ol>
+</li>
+<li>Then you can add the get_data image as a service: (Note: This is done instead of starting the container)</li>
+
+```bash
+docker service create --replicas 1 --name get_d1 get_data
+```
+
+<li>Then simply change the scale of this service:</li>
+
+```bash
+docker service scale get_d1=5
+```
+
+ </ol>
+ <p>Please note, you can do this for other images as well, in my case I've done this as it requires the most processing. You can do it similarly for plot_data as well.</p>
 </div>
