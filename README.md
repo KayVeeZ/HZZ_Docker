@@ -29,11 +29,17 @@ docker image build -t plot_data .
 
 <h2 style=text-decoration: underline;>Building the containers</h2>
 	<p>Building the containers is a little different than containers, the image is already in the local docker repository. We just need to be careful to add arguments carefully.<br/>
+<p>For plot_data(named as plot_d1) image:</p>
+
+```bash
+docker run --name get_d1 -it -P get_data
+```
+ <p style=border-style: dashed;>
 	-it: adds interactive shell<br/>
 	-P: maps ports randomly<br/>
 	-d: detaches the container from the CLI (runs it in background) <br/>
 	In this case you can see the logs by using:</p>
- 
+ </p>
 ```bash
 docker logs get_d1 -f
 ```
@@ -43,7 +49,7 @@ docker logs get_d1 -f
 <p>For plot_data(named as plot_d1) image:</p>
 
 ```bash
-docker run --name get_d1 -it -P get_data
+docker run --name plot_d1 -it -P plot_data
 ```
 
 
