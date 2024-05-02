@@ -1,4 +1,5 @@
 <h1><font style=text-decoration: underline;>Docker and HZZ</font></h1>
+<p>Note: If you prefer, you can go to my Docker repository for an easier installation: <a href="https://hub.docker.com/repository/docker/kshitijv2013/hzz_docker/general">https://hub.docker.com/repository/docker/kshitijv2013/hzz_docker/general</a></p>
 <div name="description">
 	<h2 style=text-decoration: underline;>Description</h2>
 	<p>
